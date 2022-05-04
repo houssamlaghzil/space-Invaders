@@ -83,6 +83,7 @@ export default class Laser {
     ctx.fillRect(x + borde, y + borde, w - borde * 2, h - borde * 2);
   }
 
+
   cambiarDeTamaño() {
     this.w = this.juego.w / 150;
     this.h = this.juego.h / 20;
