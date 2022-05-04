@@ -41,7 +41,7 @@ const TIPOS = {
     letra: "white"
   },
   4: {
-    autofire: 1,
+    autofire: 0,
     vida: 0,
     laser: 0,
     velocidad: 0,
@@ -51,7 +51,7 @@ const TIPOS = {
     letra: "white"
   },
   5: {
-    autofire: 1,
+    autofire: 0,
     vida: 0,
     laser: 0,
     velocidad: 0,

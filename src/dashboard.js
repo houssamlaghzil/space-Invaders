@@ -139,7 +139,7 @@ export default class Dashboard {
       this.wd1 + this.wj + this.wd1 / 6,
       this.posicion.y + (this.h / 12) * 7
     );
-    if (this.juego.autofire < 0)
+    if (this.juego.autofire === 0)
       this.juego.ctx.fillText(
         "AUTO FIRE",
         this.wd1 + this.wj + this.wd1 / 6,

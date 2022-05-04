@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./Arka_solid.ttf":[["Arka_solid.8654d0fe.ttf","Arka_solid.ttf"],"Arka_solid.ttf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/@firebase/util/dist/index.esm2017.js":[function(require,module,exports) {
+},{"./Arka_solid.ttf":[["Arka_solid.8654d0fe.ttf","Arka_solid.ttf"],"Arka_solid.ttf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@firebase/util/dist/index.esm2017.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -2576,7 +2576,7 @@ async function deleteDB(dbName) {
     }
   });
 }
-},{}],"../node_modules/@firebase/component/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{}],"node_modules/@firebase/component/dist/esm/index.esm2017.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3053,7 +3053,7 @@ class ComponentContainer {
 }
 
 exports.ComponentContainer = ComponentContainer;
-},{"@firebase/util":"../node_modules/@firebase/util/dist/index.esm2017.js"}],"../node_modules/@firebase/logger/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js"}],"node_modules/@firebase/logger/dist/esm/index.esm2017.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3311,7 +3311,7 @@ function setUserLogHandler(logCallback, options) {
     }
   }
 }
-},{}],"../node_modules/@firebase/app/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{}],"node_modules/@firebase/app/dist/esm/index.esm2017.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4391,7 +4391,7 @@ function registerCoreComponents(variant) {
 
 
 registerCoreComponents('');
-},{"@firebase/component":"../node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/logger":"../node_modules/@firebase/logger/dist/esm/index.esm2017.js","@firebase/util":"../node_modules/@firebase/util/dist/index.esm2017.js"}],"../node_modules/firebase/app/dist/index.esm.js":[function(require,module,exports) {
+},{"@firebase/component":"node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/logger":"node_modules/@firebase/logger/dist/esm/index.esm2017.js","@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js"}],"node_modules/firebase/app/dist/index.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4430,7 +4430,7 @@ var version = "9.7.0";
  */
 
 (0, _app.registerVersion)(name, version, 'app');
-},{"@firebase/app":"../node_modules/@firebase/app/dist/esm/index.esm2017.js"}],"nave.js":[function(require,module,exports) {
+},{"@firebase/app":"node_modules/@firebase/app/dist/esm/index.esm2017.js"}],"nave.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4776,7 +4776,7 @@ process.chdir = function (dir) {
 process.umask = function () {
   return 0;
 };
-},{}],"../node_modules/@firebase/database/dist/index.esm2017.js":[function(require,module,exports) {
+},{}],"node_modules/@firebase/database/dist/index.esm2017.js":[function(require,module,exports) {
 var process = require("process");
 "use strict";
 
@@ -20729,7 +20729,7 @@ const forceRestClient = function (forceRestClient) {
 
 exports._TEST_ACCESS_forceRestClient = forceRestClient;
 registerDatabase();
-},{"@firebase/app":"../node_modules/@firebase/app/dist/esm/index.esm2017.js","@firebase/component":"../node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/util":"../node_modules/@firebase/util/dist/index.esm2017.js","@firebase/logger":"../node_modules/@firebase/logger/dist/esm/index.esm2017.js","process":"node_modules/process/browser.js"}],"../node_modules/firebase/database/dist/index.esm.js":[function(require,module,exports) {
+},{"@firebase/app":"node_modules/@firebase/app/dist/esm/index.esm2017.js","@firebase/component":"node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js","@firebase/logger":"node_modules/@firebase/logger/dist/esm/index.esm2017.js","process":"node_modules/process/browser.js"}],"node_modules/firebase/database/dist/index.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20748,7 +20748,7 @@ Object.keys(_database).forEach(function (key) {
     }
   });
 });
-},{"@firebase/database":"../node_modules/@firebase/database/dist/index.esm2017.js"}],"laser.js":[function(require,module,exports) {
+},{"@firebase/database":"node_modules/@firebase/database/dist/index.esm2017.js"}],"laser.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20836,7 +20836,7 @@ var Laser = /*#__PURE__*/function () {
           this.juego.canones = 0;
           this.juego.limiteDeLaser--;
           this.juego.nave.velocidad.max--;
-          this.juego.autofire = 1;
+          this.juego.autofire = 0;
           this.juego.sonidoImpactoNave.play();
         }
       }
@@ -20862,7 +20862,7 @@ var Laser = /*#__PURE__*/function () {
 }();
 
 exports.default = Laser;
-},{"./colision.js":"colision.js","firebase/database":"../node_modules/firebase/database/dist/index.esm.js"}],"entradas.js":[function(require,module,exports) {
+},{"./colision.js":"colision.js","firebase/database":"node_modules/firebase/database/dist/index.esm.js"}],"entradas.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21013,7 +21013,7 @@ var Dashboard = /*#__PURE__*/function () {
       this.juego.ctx.fillText(this.juego.nave.velocidad.max, this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 3);
       this.juego.ctx.fillText(this.juego.limiteDeLaser, this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 5);
       this.juego.ctx.fillText(this.juego.vidas + "%", this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 7);
-      if (this.juego.autofire < 0) this.juego.ctx.fillText("AUTO FIRE", this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 8);
+      if (this.juego.autofire === 0) this.juego.ctx.fillText("AUTO FIRE", this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 8);
     }
   }, {
     key: "actualizar",
@@ -21509,7 +21509,7 @@ var TIPOS = {
     letra: "white"
   },
   4: {
-    autofire: 1,
+    autofire: 0,
     vida: 0,
     laser: 0,
     velocidad: 0,
@@ -21519,7 +21519,7 @@ var TIPOS = {
     letra: "white"
   },
   5: {
-    autofire: 1,
+    autofire: 0,
     vida: 0,
     laser: 0,
     velocidad: 0,
@@ -21804,7 +21804,7 @@ var Juego = /*#__PURE__*/function () {
     value: function actualizar(tiempoDelta) {
       var _this = this;
 
-      if (this.autofire > 0) this.agregarLaser("n");
+      if (this.autofire === 0) this.agregarLaser("n");
       if (this.vidas > 100) this.vidas = 100;
       if (this.limiteDeLaser > 10) this.limiteDeLaser = 10;
       if (this.limiteDeLaser < 1) this.limiteDeLaser = 1;
@@ -22008,7 +22008,7 @@ function cicloDeJuego(tiempo) {
 }
 
 requestAnimationFrame(cicloDeJuego);
-},{"./styles.css":"styles.css","firebase/app":"../node_modules/firebase/app/dist/index.esm.js","./juego.js":"juego.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./styles.css":"styles.css","firebase/app":"node_modules/firebase/app/dist/index.esm.js","./juego.js":"juego.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -22036,7 +22036,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63734" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58767" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

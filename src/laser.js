@@ -68,7 +68,7 @@ export default class Laser {
         this.juego.canones = 0;
         this.juego.limiteDeLaser--;
         this.juego.nave.velocidad.max--;
-        this.juego.autofire = 1;
+        this.juego.autofire = 0;
         this.juego.sonidoImpactoNave.play();
       }
     }

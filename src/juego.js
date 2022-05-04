@@ -70,7 +70,7 @@ export default class Juego {
     this.menu.dibujar();
   }
   actualizar(tiempoDelta) {
-    if (this.autofire > 0) this.agregarLaser("n");
+    if (this.autofire === 0) this.agregarLaser("n");
     if (this.vidas > 100) this.vidas = 100;
     if (this.limiteDeLaser > 10) this.limiteDeLaser = 10;
     if (this.limiteDeLaser < 1) this.limiteDeLaser = 1;
