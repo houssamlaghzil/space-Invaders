@@ -45,7 +45,6 @@ export default class Laser {
           var valuedatapuntos = this.juego.puntos;
           console.log(valuedatapuntos)
 
-
           function writeUserData() {
             console.log(valuedatapuntos)
             const db = getDatabase();
@@ -54,7 +53,6 @@ export default class Laser {
             });
           }
           writeUserData()
-
 
           /*const dbRefObjectArticleCONTENU1 = firebase.database().ref().child('testvalue');
           dbRefObjectArticleCONTENU1.on('value', snap => {this.juego.puntos = snap.val()});
