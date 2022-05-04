@@ -1,4 +1,7 @@
 import { colision } from "./colision.js";
+import { getDatabase, ref, set } from "firebase/database";
+//import firebase from "firebase/database";
+
 export default class Laser {
   constructor(juego, x, y, tipo) {
     this.juego = juego;
@@ -33,11 +36,29 @@ export default class Laser {
   }
   actualizar() {
     this.cambiarDeTamaño();
+    var valuedatapuntos ;
     this.posicion.y += this.velocidad[this.tipo];
     if (this.tipo === "n") {
       this.juego.invasores.forEach(invasor => {
         if (colision(invasor, this)) {
-          this.juego.puntos += 100;
+          this.juego.puntos += 1;
+          var valuedatapuntos = this.juego.puntos;
+          console.log(valuedatapuntos)
+
+
+          function writeUserData() {
+            console.log(valuedatapuntos)
+            const db = getDatabase();
+            set(ref(db, 'testvalue/'), {
+              value : valuedatapuntos
+            });
+          }
+          writeUserData()
+
+
+          /*const dbRefObjectArticleCONTENU1 = firebase.database().ref().child('testvalue');
+          dbRefObjectArticleCONTENU1.on('value', snap => {this.juego.puntos = snap.val()});
+*/
           invasor.energia--;
           this.juego.sonidoImpacto.play();
           this.posicion.y = -20;
@@ -49,7 +70,7 @@ export default class Laser {
         this.juego.canones = 0;
         this.juego.limiteDeLaser--;
         this.juego.nave.velocidad.max--;
-        this.juego.autofire = 0;
+        this.juego.autofire = 1;
         this.juego.sonidoImpactoNave.play();
       }
     }
