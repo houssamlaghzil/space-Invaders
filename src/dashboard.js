@@ -141,7 +141,7 @@ export default class Dashboard {
     );
     if (this.juego.autofire === 0)
       this.juego.ctx.fillText(
-        "AUTO FIRE",
+        "",
         this.wd1 + this.wj + this.wd1 / 6,
         this.posicion.y + (this.h / 12) * 8
       );

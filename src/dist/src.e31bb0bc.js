@@ -21013,7 +21013,7 @@ var Dashboard = /*#__PURE__*/function () {
       this.juego.ctx.fillText(this.juego.nave.velocidad.max, this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 3);
       this.juego.ctx.fillText(this.juego.limiteDeLaser, this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 5);
       this.juego.ctx.fillText(this.juego.vidas + "%", this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 7);
-      if (this.juego.autofire === 0) this.juego.ctx.fillText("AUTO FIRE", this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 8);
+      if (this.juego.autofire === 0) this.juego.ctx.fillText("", this.wd1 + this.wj + this.wd1 / 6, this.posicion.y + this.h / 12 * 8);
     }
   }, {
     key: "actualizar",
@@ -21806,7 +21806,7 @@ var Juego = /*#__PURE__*/function () {
 
       if (this.autofire === 0) this.agregarLaser("n");
       if (this.vidas > 100) this.vidas = 100;
-      if (this.limiteDeLaser > 10) this.limiteDeLaser = 10;
+      if (this.limiteDeLaser > 10) this.limiteDeLaser = 1;
       if (this.limiteDeLaser < 1) this.limiteDeLaser = 1;
       if (this.nave.velocidad.max > 40) this.nave.velocidad.max = 40;
       if (this.nave.velocidad.max < 10) this.nave.velocidad.max = 10;
@@ -22036,7 +22036,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58767" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51804" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

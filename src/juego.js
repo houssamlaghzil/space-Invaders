@@ -72,7 +72,7 @@ export default class Juego {
   actualizar(tiempoDelta) {
     if (this.autofire === 0) this.agregarLaser("n");
     if (this.vidas > 100) this.vidas = 100;
-    if (this.limiteDeLaser > 10) this.limiteDeLaser = 10;
+    if (this.limiteDeLaser > 10) this.limiteDeLaser = 1;
     if (this.limiteDeLaser < 1) this.limiteDeLaser = 1;
     if (this.nave.velocidad.max > 40) this.nave.velocidad.max = 40;
     if (this.nave.velocidad.max < 10) this.nave.velocidad.max = 10;
